@@ -1,28 +1,62 @@
 body {
     font-family: 'Roboto', sans-serif !important;
-}
-
-.subtitle {
+  }
+  
+  .subtitle {
     color: #fff;
     font-size: 0.8rem;
-}
-
-#banner {
+  }
+  
+  #banner {
     background-image: url('./images/cropped-white-cup-od-coffee-mac-code.jpg');
-    background-position-y: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 23rem;
     max-height: 23rem;
-}
-
-
-#profile {
-    max-width: 100%;
+  }
+  
+  /* Foto de perfil ajustada para max-width 80% */
+  #profile {
+    max-width: 80%;
     min-width: 100px;
     height: auto;
-}
-
-p {
+  }
+  
+  p {
     font-size: 0.9rem !important;
-}
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0d6efd;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  /* Estilização dos botões modernos e suaves, reduzidos para 75% do tamanho anterior */
+  .btn-custom {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  
+  .btn-custom:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Espaço extra na parte inferior do conteúdo para evitar que os botões fiquem "colados" no rodapé */
+  #content {
+    padding-bottom: 2rem;
+  }
