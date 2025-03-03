@@ -63,6 +63,11 @@
         document.getElementById('lang-en').classList.add('active');
         document.getElementById('lang-pt').classList.remove('active');
         document.getElementById('header-title').innerText = "Software Architect & Tech Leader | Java Innovator | Global Educator & Product Strategist";
+        document.getElementById('social-linkedin').title = "LinkedIn Profile";
+        document.getElementById('social-medium').title = "Medium Blog";
+        document.getElementById('social-github').title = "GitHub Profile";
+        document.getElementById('social-twitter-x').title = "Twitter Profile";
+        document.getElementById('social-mail').title = "Send an Email";
       } else {
         document.documentElement.lang = "pt-BR";
         document.getElementById('content-en').style.display = 'none';
@@ -70,6 +75,11 @@
         document.getElementById('lang-en').classList.remove('active');
         document.getElementById('lang-pt').classList.add('active');
         document.getElementById('header-title').innerText = "Arquiteto de Software & Líder Técnico | Inovador em Java | Educador Global & Estrategista de Produtos";
+        document.getElementById('social-linkedin').title = "Perfil LinkedIn";
+        document.getElementById('social-medium').title = "Blog Medium";
+        document.getElementById('social-github').title = "Perfil GitHub";
+        document.getElementById('social-twitter-x').title = "Perfil Twitter";
+        document.getElementById('social-mail').title = "Envie um e-mail";
       }
     }
     
@@ -82,15 +92,15 @@
 <body class="d-flex flex-column h-100">
   <header>
     <!-- Navbar fixa com alternador de idioma e bandeiras -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <div class="me-auto">
           <a class="navbar-brand" href="https://jessehaniel.dev/">
-            Jesse Haniel
+            Jesse Haniel<br/>
             <span class="fw-light fst-italic subtitle" id="header-title"></span>
           </a>
         </div>
-        <ul class="navbar-nav mb-2 mb-md-0 me-auto">
+        <ul class="navbar-nav mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link" href="javascript:setLanguage('en')" id="lang-en">🇺🇸 English</a>
           </li>
@@ -114,9 +124,14 @@
         <div id="content-en">
           <p>Hello, I am <strong>Jesse Haniel</strong> - a <strong>Software Engineer</strong> with over <strong>15 years of experience</strong> in development, leadership, and training.</p>
           <p>My career spans critical system development at the <a href="https://www.tjpb.jus.br/" target="_blank"><strong>Tribunal de Justiça da Paraíba</strong> (State Court of Paraíba)</a> and coordinating global training programs at <a href="https://ada.tech/" target="_blank"><strong>Ada Tech</strong></a>. I have collaborated with top companies like <strong>Uber, Mercado Livre, iFood, B3, Santander, Caixa, Banco do Brasil, BTG, Cielo, Nuclea, Sinqia</strong> and <strong>Totvs</strong>, addressing key topics such as <strong>Java, Spring Boot, Docker, Kubernetes, and AWS</strong>, as well as strategic subjects like <strong>agile methodologies, software architecture, digital transformation, and artificial intelligence</strong>.</p>
-          <p>I also share my expertise through articles on <a href="https://codegym.cc/authors/jesse-haniel" target="_blank"><strong>Codegym</strong></a>, discussing innovations and best practices in software development.</p>
-          <p>My academic background includes a <strong>Master’s in Computer Engineering</strong> with an emphasis on <strong>Technological Innovation in Healthcare</strong> from UFRN and a degree in <strong>Analysis and Development of Systems</strong> from IFRN (Summa cum laude).</p>
-          <p>I am always seeking new challenges to apply my expertise, innovate, and contribute to technological evolution. Let’s transform ideas into real solutions!</p>
+          <p>
+            I've launched my new blog on Medium at 
+            <a href="https://medium.com/@jesse.haniel" target="_blank"><strong>Medium</strong></a>, 
+            where I cover a broad range of tech and career topics. I also share my expertise through articles on 
+            <a href="https://codegym.cc/authors/jesse-haniel" target="_blank"><strong>Codegym</strong></a>, discussing innovations and best practices in software development.
+          </p>
+          <p>My academic background includes a <strong>Master's in Computer Engineering</strong> with an emphasis on <strong>Technological Innovation in Healthcare</strong> from UFRN and a degree in <strong>Analysis and Development of Systems</strong> from IFRN (Summa cum laude).</p>
+          <p>I am always seeking new challenges to apply my expertise, innovate, and contribute to technological evolution. Let's transform ideas into real solutions!</p>
           <div class="mt-4 text-center">
             <a class="btn btn-custom me-2" href="./resources/resume.pdf" target="_blank"><strong>Download Resume (English)</strong></a>
             <a class="btn btn-custom" href="./resources/curriculo.pdf" target="_blank"><strong>Download Currículo (Português)</strong></a>
@@ -126,7 +141,12 @@
         <div id="content-pt" style="display: none;">
           <p>Olá, eu sou <strong>Jesse Haniel</strong> - <strong>Engenheiro de Software</strong> com mais de <strong>15 anos de experiência</strong> em desenvolvimento, liderança e treinamento.</p>
           <p>Minha trajetória inclui o desenvolvimento de sistemas críticos no <a href="https://www.tjpb.jus.br/" target="_blank"><strong>Tribunal de Justiça da Paraíba</strong></a> e a coordenação de programas de treinamento globais na <a href="https://ada.tech/" target="_blank"><strong>Ada Tech</strong></a>. Já colaborei com grandes empresas como <strong>Uber, Mercado Livre, iFood, B3, Santander, Caixa, Banco do Brasil, BTG, Cielo, Nuclea, Sinqia</strong> e <strong>Totvs</strong>, abordando temas essenciais como <strong>Java, Spring Boot, Docker, Kubernetes e AWS</strong>, além de tópicos estratégicos como <strong>metodologias ágeis, arquitetura de software, transformação digital e inteligência artificial</strong>.</p>
-          <p>Também compartilho meu conhecimento por meio de artigos no <a href="https://codegym.cc/authors/jesse-haniel" target="_blank"><strong>Codegym</strong></a>, onde discuto inovações e melhores práticas no desenvolvimento de software.</p>
+          <p>
+            Lancei meu novo blog no Medium em 
+            <a href="https://medium.com/@jesse.haniel" target="_blank"><strong>Medium</strong></a>, 
+            onde abordo uma ampla gama de temas de tecnologia e carreira. Também compartilho meu conhecimento por meio de artigos no 
+            <a href="https://codegym.cc/authors/jesse-haniel" target="_blank"><strong>Codegym</strong></a>, onde discuto inovações e melhores práticas no desenvolvimento de software.
+          </p>
           <p>Minha formação acadêmica inclui um <strong>Mestrado em Engenharia de Computação</strong> com ênfase em <strong>Inovação Tecnológica na Saúde</strong> pela <strong>UFRN</strong> e uma graduação em <strong>Análise e Desenvolvimento de Sistemas</strong> pelo <strong>IFRN</strong> (Summa cum laude).</p>
           <p>Estou sempre em busca de novos desafios para aplicar minha expertise, inovar e contribuir para a evolução tecnológica. Vamos transformar ideias em soluções reais!</p>
           <div class="mt-4 text-center">
@@ -139,10 +159,37 @@
   </div>
   
   <footer class="footer mt-auto py-3 bg-dark">
-    <div class="container text-center">
-      <p id="copyright" class="text-muted">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="footer-copy text-muted">
         Jesse Haniel, 2020-<span id="currentyear"></span>. Copyright &copy; Todos os direitos reservados.
-      </p>
+      </div>
+      <div class="footer-social">
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/jessehaniel/" id="social-linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener" href="https://medium.com/@jesse.haniel" class="ms-2" id="social-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-medium" viewBox="0 0 16 16">
+            <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"/>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener" href="https://github.com/jessehaniel" title="GitHub Profile" id="social-github">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener" href="https://twitter.com/jessehaniel" id="social-twitter-x">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>
+        </a>
+        <a target="_blank" rel="noopener" href="mailto:jesse.haniel@gmail.com" id="social-mail">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+            <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
   
