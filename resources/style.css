@@ -1,62 +1,157 @@
 body {
-    font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#banner {
+  background-image: url('./images/cropped-white-cup-od-coffee-mac-code.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 23rem;
+  max-height: 23rem;
+}
+
+#profile {
+  max-width: 80%;
+  min-width: 100px;
+  height: auto;
+}
+
+p {
+  font-size: 0.9rem !important;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #4A90E2;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom:hover {
+  background-color: #357ABD;
+}
+
+#content {
+  padding-bottom: 2rem;
+}
+
+.footer-social {
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social .list-inline-item {
+  margin: 0 0.25rem;
+}
+
+.footer-social .list-inline-item a {
+  display: inline-block;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social .list-inline-item a:hover {
+  opacity: 1;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+}
+
+.footer-social a {
+  margin-left: 0.5rem;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .navbar .container {
+    flex-direction: row;
+    align-items: center;
   }
   
-  .subtitle {
-    color: #fff;
-    font-size: 0.8rem;
+  .navbar-nav {
+    flex-direction: row !important;
+    margin-left: 0;
   }
   
-  #banner {
-    background-image: url('./images/cropped-white-cup-od-coffee-mac-code.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 23rem;
-    max-height: 23rem;
+  .navbar-nav .nav-item {
+    margin-right: 0.5rem;
   }
-  
-  /* Foto de perfil ajustada para max-width 80% */
+
+  #header-title {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
   #profile {
-    max-width: 80%;
-    min-width: 100px;
-    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1rem auto;
   }
-  
-  p {
-    font-size: 0.9rem !important;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #0d6efd;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  /* Estilização dos botões modernos e suaves, reduzidos para 75% do tamanho anterior */
+
   .btn-custom {
-    background-color: #4A90E2;
-    color: #fff;
-    padding: 0.6rem 1rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    padding: 0.45rem 0.75rem;
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
   }
-  
-  .btn-custom:hover {
-    background-color: #357ABD;
-  }
-  
-  /* Espaço extra na parte inferior do conteúdo para evitar que os botões fiquem "colados" no rodapé */
+
   #content {
-    padding-bottom: 2rem;
+    padding: 1rem;
   }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .footer-social {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+}
