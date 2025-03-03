@@ -126,8 +126,13 @@ strong {
     word-wrap: break-word;
   }
 
+  #banner {
+    background-image: url('./images/cropped-white-cup-od-coffee-mac-code_small.jpg');
+    min-height: 13rem;
+    max-height: 13rem;
+  }
+
   #profile {
-    max-width: 100%;
     display: block;
     margin: 0 auto 1rem auto;
   }
